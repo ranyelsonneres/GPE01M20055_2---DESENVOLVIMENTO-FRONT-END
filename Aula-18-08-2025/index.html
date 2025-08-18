@@ -6,7 +6,7 @@
     <title>Aula 18-08-2025</title>
 </head>
 <body style="background-color: powderblue;">
-    <h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: red;">Aula 18-08-2025</h1>
+    <h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: red; text-decoration: underline;">Aula 18-08-2025</h1>
 
     <!--Formatações de texto-->
     <p style="text-align: right;">Colocando um <mark style="background-color: #1967E0; color: rgb(240, 255, 73);">Texto</mark> em Destaque</p>
@@ -14,11 +14,88 @@
 
     <!--Estilos-->
     <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; background-color: aquamarine;">Texto com uma fonte um pouco maior</p>
-    <h1 style="color: red; text-shadow: 2px 2px 0 black; text-align: center;">Estilo com sombra</h1>
+    <h1 style="color: red; text-shadow: 2px 2px 0 black; text-align: center;"><u>Estilo com sombra</u></h1>
    
     <!--Citações-->
+    <!--
+        blockquote - indicar que o texto contido nele é uma citação em bloco
+        q
+        cite
+        address
+        abbr
+    -->
+       <p>O significado da sigla WWW:</p>
+       <blockquote cite="https://pt.wikipedia.org/wiki/World_Wide_Web">
+        World Wide Web
+       </blockquote>
+       
+       <p>O significado da sigla HTML:</p>
+       <blockquote cite="https://pt.wikipedia.org/wiki/HTML">
+        HyperText Markup Language
+       </blockquote>
+
+       <p>O significado da sigla HTTP:</p>
+       <blockquote cite="https://pt.wikipedia.org/wiki/Hypertext_Transfer_Protocol">
+        HyperText Transfer Protocol
+       </blockquote>
+
+       <p>Sócrates: "Só sei que nada sei"</p><!--não é uma citação!-->
+       <p>Sócrates: <q>Só sei que nada sei</q></p>
+
+       <p>Livro: <cite>Programando em JavaScript</cite></p>
+       <address>
+        Escrito por: Fulano de Tal <br>
+        Editora: Novas Tecnologias
+       </address>
+
+       <p>A rede <abbr title="Software-Defined Network">SDN</abbr> surgiu com a criação do protocolo OpenFlow</p>
+       <p>A liga de basquete americana: 
+            <abbr title="National Basketball Association ">NBA</abbr>
+        </p>
+       <p>A liga de futebol americano: 
+            <abbr title="Nation Football League">NFL</abbr>
+        </p>
 
     <!--Listas-->
+    <h1 style="color: red; text-shadow: 2px 2px 0 black; text-align: center;"><u>Listas</u></h1>
+    
+    <p>Lista não ordenada:</p>
+    <!--lista não ordenada-->
+    <ul style="list-style: circle;"> <!--square; circle; disc-->
+        <li>Item B</li>
+            <ul>
+                <li>Item B.1</li>
+                <li>Item B.2</li>
+            </ul>
+        <li>Item A</li>
+    </ul>
+
+    <p>Lista ordenada:</p>
+    <ol type="1">
+        <li>Ensino Fundamental</li>
+        <li>Ensino Médio</li>
+        <li>Ensino Técnico</li>
+        <li><mark>Ensino Superior: Graduação</mark></li>
+        <li>Ensino Superior: Pós-Graduação</li>
+            <ul style="list-style: square;">
+                <li>Especialização</li>
+                <li>Mestrado</li>
+                <li>Doutorado</li>
+            </ul>
+    </ol>
+
+    <!--lista de descrição-->
+    <p>FAQs (perguntas e respostas) </p>
+    <dl> <!--contém toda a lista-->
+        <dt style="font-weight: bold;">HTML:</dt> <!--representa o termo ou título--> 
+        <dd>Linguagem de marcação para estruturar conteúdo na web.</dd> <!--descrição do termo-->
+        
+        <dt><b>CSS:</b></dt> <!--b - negrito - mas não é semântico-->
+        <dd>Folhas de estilo em cascata, usadas para definir o design da página.</dd>
+        
+        <dt><strong>JavaScript</strong></dt> <!--strong - negrito - é semântico - ênfase-->
+        <dd>Linguagem de programação usada para tornar páginas web interativas.</dd>
+    </dl>
     
 </body>
 </html>
