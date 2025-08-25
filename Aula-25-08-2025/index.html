@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <style>
+        table, th, td {
+            border: 3px solid black;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+        th, td {
+            background-color: rgba(61, 255, 17, 0.628);
+            font-family: Arial;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Aula 25-08-2025: Tabelas</h1>
+    <table border="1"">
+        <caption><div style="text-align: left;">Exemplo de tabela</div></caption>
+        <tr>
+            <th colspan="4">Tabela de Notas</th>
+        </tr>
+        <tr>
+           <th style="height: 30px;">Nome</th>
+           <th>Matemática</th>
+           <th>Português</th>
+           <th>Média</th> 
+        </tr>
+        <tr>
+           <td>Fulano da Silva</td>
+           <td>9.0</td>
+           <td>8.5</td>
+           <td>8.8</td> 
+        </tr>
+        <tr>
+            <td>Ciclano Carvalho</td>
+            <td>7.5</td>
+            <td>8.0</td>
+            <td>7.8</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Exemplo 1</td>
+            <td>Teste 1</td>
+            <td>Teste 2</td>
+            <td rowspan="2">Exemplo 2</td>
+        </tr>
+        <tr>
+            <td>Teste 3</td>
+            <td>Teste 4</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
