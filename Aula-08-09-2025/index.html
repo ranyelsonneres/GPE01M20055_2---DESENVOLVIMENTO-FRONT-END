@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #exemplo1 {
+            background-color: aqua;
+            text-align: center;
+        }
+        #exemplo2 {
+            background-color: bisque;
+            border: 2px solid;
+        }
+        .classe {
+            background-color: brown;
+            text-align: center;
+        }
+        #titulo{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #paragrafo{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Elemento "div"</h1>
+    <div class="classe">
+        <h1>Menu</h1>
+    </div>
+    <div id="exemplo1">
+        <h1 id="titulo">Título</h1>
+        <p>Utilizando o seletor de ID</p>
+    </div>
+    <div id="exemplo2">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <p id="paragrafo">Exemplo de um parágrafo</p>
+        <img src="../aula-01-09-2025/img/logo-ucb.png" alt="" width="100" height="50">
+    </div>
+    <span style="background-color:greenyellow">
+        Exemplo 3 <br>
+        Exemplo 4
+    </span>
+    
+    <div id="formulario">
+        <h1>Formulário de Cadastro</h1>
+        <form action="resultado.html" method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" id="idNome" name="idNome" placeholder="Fulano" required><br><br>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idIdade" id="idIdade" min="0" placeholder="15"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="idEmail" id="idEmail" placeholder="email@email.com"><br><br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="idSenha" id="idSenha">
+            <p>Escolha uma cor</p>
+            <input type="radio" id="azul" name="cor" value="azul">
+            <label for="azul">Azul</label>
+            <input type="radio" id="verde" name="cor" value="verde">
+            <label for="verde">Verde</label><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    
+    <div class="classe">
+        <h1>Rodapé</h1>
+    </div>
+
+</body>
+</html>
