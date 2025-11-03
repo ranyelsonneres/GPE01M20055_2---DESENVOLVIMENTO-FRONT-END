@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Bootstrap</title>
+    <!--link do css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <!--Menu de navegação: navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="inicio">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#inicio">GPE01M20055_2</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#melhoresAlunos">Melhores Alunos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#depoimentos">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#contato">Contato</a>
+            </li>
+
+        </ul>
+    </div>
+  </div>
+</nav>
+    
+
+    <!--Seção principal do meu site-->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Bem-vindo a turma GPE01M20055_2</h1>
+            <p>Segunda Matutino - 10h40.</p>
+            <a href="" class="btn btn-light">Saiba Mais</a>
+        </div>
+    </header>
+
+    <!--Seção de cards-->
+    <section class="py-5" id="melhoresAlunos">
+    <div class="container">
+        <h2 class="text-center">Melhores Alunos:</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/person-1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">João Da Silva</h5>
+                    <p class="card-text">Preencher com um texto descritivo.</p>
+                    <a href="#" class="btn btn-primary">LinkedIn</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/person-2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Maria Oliveira</h5>
+                    <p class="card-text">Preencher com um texto descritivo.</p>
+                    <a href="#" class="btn btn-primary">LinkedIn</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/person-3.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ana Luísa</h5>
+                    <p class="card-text">Preencher com um texto descritivo.</p>
+                    <a href="#" class="btn btn-primary">LinkedIn</a>
+                </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    </section>
+
+    <!--Carousel: Depoimentos-->
+    <section class="bg-light py-5" id="depoimentos">   
+    <div class="container">
+        <h2 class="text-center">Depoimentos</h2>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <blockquote class="blockquote">
+                        <p>"Aluno 1: depoimento"</p>
+                        <footer class="blockquote-footer">Aluno 1</footer>
+                    </blockquote>
+                </div>
+                <div class="carousel-item text-center">
+                    <p>Aluno 2</p>
+                    <footer>Aluno 2</footer>
+                </div>
+                <div class="carousel-item text-center">
+                    <p>Aluno 3</p>
+                    <footer>Aluno 3</footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!--Botão e o Modal: javascript-->
+    <!-- Button trigger modal -->
+<section class="text-center py-5" id="contato">
+    <h2>Quer saber mais?</h2>
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Fale com a turma
+    </button>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Entre em Contato</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Envie-nos uma mensagem e retornaremos em breve.</p>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" placeholder="Nome Completo">
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" class="form-control" 
+                rows="4" placeholder="Digite sua mensagem aqui."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--Rodapé da página-->
+<footer class="bg-dark py-3 text-white text-center">
+        <p class="mb-0">
+            &copy; GPE01M20055_2 - Desenvolvimento Front-End. Todos os direitos reservados.
+        </p>
+</footer>
+    
+    <!--link do javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
